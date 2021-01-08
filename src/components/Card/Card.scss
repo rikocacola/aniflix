@@ -1,0 +1,50 @@
+.card {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
+      .score {
+        border: 2px solid #800000;
+      }
+
+      .card-footer {
+        color: #800000;
+      }
+    }
+  
+    .image {
+      width: 100%;
+      height: 95%;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 5px;
+    }
+
+    .score {
+      background-color: white;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      display: flex;
+      opacity: 0.8;
+      border: 1px solid#1a202c;
+      flex-direction: column;
+      font-size: 14px;
+    }
+  
+    .card-footer {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      color: white;
+    }
+  }
