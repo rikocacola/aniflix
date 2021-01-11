@@ -1,17 +1,35 @@
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
 import Card from '../Card/Card';
 
 import './TopAiringPreview.scss';
 
-const TopAiringPreview = (props) => {
+const TopAiringPreview = () => {
+    const linkStyle = {
+        textDecoration: "none"
+    }
+
+    const [animes, setAnimes] = useState([]);
+
+    useEffect(() => {
+        axios.get(`https://api.jikan.moe/v3/top/anime/1/airing`)
+            .then(res => setAnimes(res.data.top))
+            .catch(err => console.error(err))
+    }, [])
+
     return (
         <div className="top-airing-preview">
-            <h1 className="title">
-                Top Airing Anime
+            <Link style={linkStyle} to='/airing'>
+                <h1 className="title">
+                    Top Airing Anime
             </h1>
-            <div className="preview">
+            </Link>
+            <div className="container-preview">
                 {
-                    props.airings.filter((airing, idx) => idx < 4).map(({ mal_id, ...otherProps }) => (
-                        <Card key={mal_id} mal_id={mal_id} {...otherProps} />
+                    animes.filter((anime, idx) => idx < 4).map(({ mal_id, ...otherProps }) => (
+                        <div className="preview" key={mal_id}><Card mal_id={mal_id} {...otherProps} /></div>
                     ))
                 }
             </div>

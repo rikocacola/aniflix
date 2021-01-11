@@ -1,11 +1,11 @@
-import TopAiring from '../../components/TopAiring/TopAiring';
-import TopMovie from '../../components/TopMovie/TopMovie';
+import TopAiringPreview from '../../components/TopAiringPreview/TopAiringPreview';
+import TopMoviePreview from '../../components/TopMoviePreview/TopMoviePreview';
 
 const HomePage = () => {
     return (
         <>
-            <TopAiring />
-            <TopMovie />
+            <TopAiringPreview />
+            <TopMoviePreview />
         </>
     )
 }

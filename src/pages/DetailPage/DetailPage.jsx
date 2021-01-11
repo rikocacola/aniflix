@@ -26,9 +26,12 @@ const DetailPage = (match) => {
 
     return (
         <div className="detail-page">
-            <div className="container-trailer">
-                <iframe className="trailer" src={`${anime.trailer_url}`} frameBorder="0" title="Trailer Anime" allowFullScreen={true} />
-            </div>
+            {anime.trailer_url === null ?
+                <div style={{ textAlign: "center" }}>Trailer Not Available</div> :
+                <div className="container-trailer">
+                    <iframe className="trailer" src={`${anime.trailer_url}`} frameBorder="0" title="Trailer Anime" allowFullScreen={true} />
+                </div>
+            }
             <div className="image-title">
                 <img src={`${anime.image_url}`} alt="poster" className="image" />
                 <div className="title">
