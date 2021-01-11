@@ -11,7 +11,7 @@ const TopAiringPreview = (props) => {
             <div className="preview">
                 {
                     props.airings.filter((airing, idx) => idx < 4).map(({ mal_id, ...otherProps }) => (
-                        <Card key={mal_id} {...otherProps} />
+                        <Card key={mal_id} mal_id={mal_id} {...otherProps} />
                     ))
                 }
             </div>

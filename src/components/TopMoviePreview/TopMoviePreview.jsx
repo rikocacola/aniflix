@@ -10,7 +10,7 @@ const TopMoviePreview = (props) => {
             <div className="preview">
                 {
                     props.movies.filter((movie, idx) => idx < 4).map(({ mal_id, ...otherProps }) => (
-                        <Card key={mal_id} {...otherProps} />
+                        <Card key={mal_id} mal_id={mal_id} {...otherProps} />
                     ))
                 }
             </div>

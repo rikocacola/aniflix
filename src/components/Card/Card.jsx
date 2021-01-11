@@ -1,8 +1,9 @@
 import './Card.scss'
+import { Link } from 'react-router-dom';
 
 const Card = (props) => {
     return (
-        <div className="card">
+        <Link to={`/detail/${props.mal_id}`} className="card">
             <div
                 className="image"
                 style={{
@@ -12,8 +13,7 @@ const Card = (props) => {
             <div className="card-footer">
                 <span>{props.title}</span>
             </div>
-
-        </div>
+        </Link>
     )
 }
 export default Card;

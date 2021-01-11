@@ -5,8 +5,8 @@ import TopAiringPreview from '../TopAiringPreview/TopAiringPreview'
 const TopAiring = () => {
     const [airings, setAirings] = useState([]);
 
-    useEffect(async () => {
-        await axios.get(`https://api.jikan.moe/v3/top/anime/1/airing`)
+    useEffect(() => {
+        axios.get(`https://api.jikan.moe/v3/top/anime/1/airing`)
             .then(res => setAirings(res.data.top))
             .catch(err => console.error(err))
     }, [])
