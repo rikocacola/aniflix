@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aniflix/static/css/main.c8ebbc2f.chunk.css",
-    "main.js": "/aniflix/static/js/main.9ebe675b.chunk.js",
-    "main.js.map": "/aniflix/static/js/main.9ebe675b.chunk.js.map",
+    "main.js": "/aniflix/static/js/main.7ec460fd.chunk.js",
+    "main.js.map": "/aniflix/static/js/main.7ec460fd.chunk.js.map",
     "runtime-main.js": "/aniflix/static/js/runtime-main.0cbeb138.js",
     "runtime-main.js.map": "/aniflix/static/js/runtime-main.0cbeb138.js.map",
     "static/js/2.58090575.chunk.js": "/aniflix/static/js/2.58090575.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0cbeb138.js",
     "static/js/2.58090575.chunk.js",
     "static/css/main.c8ebbc2f.chunk.css",
-    "static/js/main.9ebe675b.chunk.js"
+    "static/js/main.7ec460fd.chunk.js"
   ]
 }
