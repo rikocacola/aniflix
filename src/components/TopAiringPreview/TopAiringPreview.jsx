@@ -21,7 +21,7 @@ const TopAiringPreview = () => {
 
     return (
         <div className="top-airing-preview">
-            <Link style={linkStyle} to='aniflix/airing'>
+            <Link style={linkStyle} to='/aniflix/airing'>
                 <h1 className="title">
                     Top Airing Anime
             </h1>
