@@ -1,0 +1,59 @@
+.search-page{
+    padding: 50px auto;
+    .title{
+        color: white;
+    }
+}
+
+@media (min-width:400px) {
+    .search-page {
+      .title {
+        color: white;
+      }
+      .container-anime {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 70px 10px;
+      }
+    }
+}
+
+@media (min-width:600px) {
+    .search-page {
+      .title {
+        color: white;
+      }
+      .container-anime {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 70px 10px;
+      }
+    }
+}
+
+@media (min-width:800px) {
+    .search-page {
+      .title {
+        color: white;
+      }
+      .container-anime {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 70px 10px;
+      }
+    }
+}
+
+@media (min-width:960px) {
+    .search-page {
+      .title {
+        color: white;
+      }
+      .container-anime {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 50px 10px;
+      }
+    }
+  }
+

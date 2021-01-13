@@ -1,11 +1,25 @@
 import SearchBox from '../SearchBox/SearchBox';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { useState } from 'react';
 
 import './Header.scss';
 
-const Header = ({ handleChange, handleSubmit, value }) => {
+const Header = () => {
     const linkStyle = {
         textDecoration: 'none'
+    }
+
+    const [searchField, setSearchField] = useState('');
+
+    let history = useHistory();
+
+    const handleChange = e => {
+        setSearchField(e.target.value)
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        history.push(`/search/${searchField}`)
     }
 
     return (
@@ -13,7 +27,7 @@ const Header = ({ handleChange, handleSubmit, value }) => {
             <Link to='/' style={linkStyle}>
                 <h1 style={{ color: "red" }}>AniFlix</h1>
             </Link>
-            <SearchBox placeholder="search anime" handleChange={handleChange} handleSubmit={handleSubmit} value={value} />
+            <SearchBox placeholder="search anime" handleChange={handleChange} handleSubmit={handleSubmit} value={searchField} />
         </nav>
     )
 }

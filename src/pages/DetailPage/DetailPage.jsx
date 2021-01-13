@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 import './DetailPage.scss'
 
-const DetailPage = (match) => {
-    const idAnime = match.match.params.id
+const DetailPage = () => {
+    const { id } = useParams();
     const [anime, setAnime] = useState({});
     const [genres, setGenres] = useState([])
 
     useEffect(() => {
         const fetchAnime = async () => {
             try {
-                const data = await axios.get(`https://api.jikan.moe/v3/anime/${idAnime}`);
+                const data = await axios.get(`https://api.jikan.moe/v3/anime/${id}`);
                 return (
                     setAnime(data.data),
                     setGenres(data.data.genres)
