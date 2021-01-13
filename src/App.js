@@ -19,10 +19,10 @@ function App() {
       <div className="content">
         <Switch>
           <Route path="/aniflix" exact component={HomePage} />
-          <Route path="/search/:search" component={SearchPage} />
-          <Route path="/detail/:id" component={DetailPage} />
-          <Route path="/airing" component={TopAiringPage} />
-          <Route path="/movie" component={TopMoviePage} />
+          <Route path="/aniflix/search/:search" component={SearchPage} />
+          <Route path="/aniflix/detail/:id" component={DetailPage} />
+          <Route path="/aniflix/airing" component={TopAiringPage} />
+          <Route path="/aniflix/movie" component={TopMoviePage} />
         </Switch>
       </div>
     </div>

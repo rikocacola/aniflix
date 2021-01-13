@@ -19,12 +19,12 @@ const Header = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        history.push(`/search/${searchField}`)
+        history.push(`/aniflix/search/${searchField}`)
     }
 
     return (
         <nav className="header">
-            <Link to='/' style={linkStyle}>
+            <Link to='/aniflix' style={linkStyle}>
                 <h1 style={{ color: "red" }}>AniFlix</h1>
             </Link>
             <SearchBox placeholder="search anime" handleChange={handleChange} handleSubmit={handleSubmit} value={searchField} />
