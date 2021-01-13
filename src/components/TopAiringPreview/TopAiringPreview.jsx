@@ -21,11 +21,11 @@ const TopAiringPreview = () => {
 
     return (
         <div className="top-airing-preview">
-            <Link style={linkStyle} to='/airing'>
+            <Link style={linkStyle} to='aniflix/airing'>
                 <h1 className="title">
                     Top Airing Anime
             </h1>
-            </Link>
+            </Link >
             <div className="container-preview">
                 {
                     animes.filter((anime, idx) => idx < 4).map(({ mal_id, ...otherProps }) => (
@@ -33,7 +33,7 @@ const TopAiringPreview = () => {
                     ))
                 }
             </div>
-        </div>
+        </div >
     )
 }
 

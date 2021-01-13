@@ -20,7 +20,7 @@ const TopMoviePreview = () => {
 
     return (
         <div className="top-movie-preview">
-            <Link style={linkStyle} to="/movie">
+            <Link style={linkStyle} to="aniflix/movie">
                 <h1 className="title">
                     Top Movie Anime
                 </h1>
