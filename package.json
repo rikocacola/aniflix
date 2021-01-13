@@ -2,6 +2,7 @@
   "name": "aniflix",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rikocacola.github.io/aniflix",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8sw",
     "@testing-library/react": "^11.2.2",
