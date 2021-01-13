@@ -18,7 +18,7 @@ function App() {
       </div>
       <div className="content">
         <Switch>
-          <Route path="/" exact component={HomePage} />
+          <Route path="/aniflix" exact component={HomePage} />
           <Route path="/search/:search" component={SearchPage} />
           <Route path="/detail/:id" component={DetailPage} />
           <Route path="/airing" component={TopAiringPage} />
